@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: Roboto, sans-serif, arial;
+    background-color: rgb(243, 242, 242);
+}
+#textintro {
+    margin: 0;
+    padding: 10px;
+}
+
+#jumbotron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: grey;
+    background-image: url("imgs/crossline-lines.png");
+    background-repeat: repeat;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+#imageheader {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    box-shadow: 5px 5px 5px rgb(212, 212, 212);
+    transition: all .2s ease-in-out;
+}
+#imageheader:hover { 
+    transform: scale(1.1); 
+}
+#img-header-div {
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+}
+
+#img-caption {
+    font-size: 12px;
+    padding-top: 10px;
+}
+#main {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+#image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border-style: solid;
+    border-color: rgb(245, 245, 245);
+    border-width: 2px;
+    box-shadow: 5px 5px 5px rgb(212, 212, 212);
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 20px;
+    background-color: white;
+}
+#img-div {
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    padding-right: 30px;
+    min-width: 30%;
+}
+
+li {
+    margin: 15px;
+}
+
+@media screen and (max-width: 700px) {
+    #main { 
+        flex-direction: column;
+    } 
+}
